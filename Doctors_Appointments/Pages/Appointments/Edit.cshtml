@@ -29,6 +29,11 @@
                 <select asp-for="Appointment.ReasonForAppointmentId" class="form-control" asp-items="ViewBag.ReasonForAppointmentId"></select>
                 <span asp-validation-for="Appointment.ReasonForAppointmentId" class="text-danger"></span>
             </div>
+         <div class="form-group">
+            <label asp-for="Appointment.AppointmentTime" class="control-label"></label>
+            <input class="form-control" asp-for="Appointment.AppointmentTime" />
+            <span asp-validation-for="Appointment.AppointmentTime" class="text-danger"></span>
+        </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>

@@ -22,6 +22,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Appointment[0].ReasonForAppointment)
+            </th>    
+            <th>
+                @Html.DisplayNameFor(model => model.Appointment[0].AppointmentTime)
             </th>
             <th></th>
         </tr>
@@ -39,8 +42,12 @@
                 @Html.DisplayFor(modelItem => item.ReasonForAppointment.Reason)
             </td>        
             <td>
-                @Html.DisplayFor(modelItem => item.ReasonForAppointment.Charge)
+                @Html.DisplayFor(modelItem => item.AppointmentTime)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReasonForAppointment.Charge)
+            </td>    
+
             <td>
                 <a class="btn btn-outline-info" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a class="btn btn-outline-info"asp-page="./Details" asp-route-id="@item.Id">Details</a> |

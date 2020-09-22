@@ -14,6 +14,7 @@ INSERT INTO [dbo].[ReasonForAppointment] ([Id], [Reason], [Charge]) VALUES (3, N
 INSERT INTO [dbo].[ReasonForAppointment] ([Id], [Reason], [Charge]) VALUES (4, N'Check up', CAST(10.00 AS Decimal(18, 2)))
 SET IDENTITY_INSERT [dbo].[ReasonForAppointment] OFF
 SET IDENTITY_INSERT [dbo].[Appointment] ON
-INSERT INTO [dbo].[Appointment] ([Id], [PatientId], [DoctorId], [ReasonForAppointmentId]) VALUES (3, 2, 4, 2)
-INSERT INTO [dbo].[Appointment] ([Id], [PatientId], [DoctorId], [ReasonForAppointmentId]) VALUES (4, 3, 3, 4)
+INSERT INTO [dbo].[Appointment] ([Id], [PatientId], [DoctorId], [ReasonForAppointmentId], [AppointmentTime]) VALUES (1, 2, 4, 2, N'2020-01-04 12:24:00')
+INSERT INTO [dbo].[Appointment] ([Id], [PatientId], [DoctorId], [ReasonForAppointmentId], [AppointmentTime]) VALUES (2, 3, 3, 4, N'2020-10-05 02:30:00')
 SET IDENTITY_INSERT [dbo].[Appointment] OFF
+

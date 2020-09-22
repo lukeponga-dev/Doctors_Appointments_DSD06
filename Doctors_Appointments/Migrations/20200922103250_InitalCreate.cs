@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Doctors_Appointments.Migrations
@@ -57,7 +58,7 @@ namespace Doctors_Appointments.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PatientId = table.Column<int>(nullable: false),
                     DoctorId = table.Column<int>(nullable: false),
-                    ReasonForAppointmentId = table.Column<int>(nullable: false)
+                    ReasonForAppointmentId = table.Column<int>(nullable: false),
                 },
                 constraints: table =>
                 {

@@ -19,14 +19,18 @@ namespace Doctors_Appointments.Pages.Appointments
             _context = context;
         }
 
-        public IList<Appointment> Appointment { get;set; }
-
+        public List<Appointment> Appointment { get;set; }
         public async Task OnGetAsync()
         {
+
             Appointment = await _context.Appointment
                 .Include(a => a.Doctor)
                 .Include(a => a.Patient)
                 .Include(a => a.ReasonForAppointment).ToListAsync();
+            
+      
+
+
         }
     }
 }

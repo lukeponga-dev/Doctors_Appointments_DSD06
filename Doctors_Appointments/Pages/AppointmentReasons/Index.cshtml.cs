@@ -23,7 +23,7 @@ namespace Doctors_Appointments.Pages.AppointmentReasons
 
         public async Task OnGetAsync()
         {
-            ReasonForAppointment = await _context.ReasonForAppointment.ToListAsync();
+            ReasonForAppointment = await(from ReasonForAppointment in _context.ReasonForAppointment select ReasonForAppointment).ToListAsync();
         }
     }
 }

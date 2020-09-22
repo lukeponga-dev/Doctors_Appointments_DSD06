@@ -20,10 +20,19 @@ namespace Doctors_Appointments.Pages.Doctors
         }
 
         public IList<Doctor> Doctor { get;set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string SearchString)
         {
-            Doctor = await _context.Doctor.ToListAsync();
+            var doctors = from m in _context.Doctor
+                select m;
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                doctors = doctors.Where(s => s.Name.Contains(SearchString));
+            }
+
+            Doctor = await doctors.ToListAsync();
         }
     }
 }

@@ -1,15 +1,23 @@
-﻿@page
+﻿@page 
 @model Doctors_Appointments.Pages.patients.IndexModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Patients</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a class="btn btn-outline-info" asp-page="Create">Add</a>
 </p>
+
+<form>
+    <p>
+        Patient Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -32,9 +40,9 @@
                 @Html.DisplayFor(modelItem => item.MobileNumber)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-outline-info" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-outline-info"asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a class="btn btn-outline-info" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

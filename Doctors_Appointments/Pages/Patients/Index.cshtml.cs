@@ -20,10 +20,18 @@ namespace Doctors_Appointments.Pages.patients
         }
 
         public IList<Patient> Patient { get;set; }
-
-        public async Task OnGetAsync()
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
+        public async Task OnGetAsync(string SearchString)
         {
-            Patient = await _context.Patient.ToListAsync();
+            var patients = from m in _context.Patient
+                select m;
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                patients = patients.Where(s => s.Name.Contains(SearchString));
+            }
+
+            Patient = await patients.ToListAsync();
         }
     }
 }

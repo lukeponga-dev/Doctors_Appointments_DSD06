@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System.IO;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Doctors_Appointments.Migrations
 {
@@ -95,6 +96,9 @@ namespace Doctors_Appointments.Migrations
                 name: "IX_Appointment_ReasonForAppointmentId",
                 table: "Appointment",
                 column: "ReasonForAppointmentId");
+
+            var sqlFile = Path.Combine(".\\DbSeed", @"data.sql");
+            migrationBuilder.Sql(File.ReadAllText(sqlFile));
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -5,5 +5,8 @@
 Update-Database
 5. After migration is successful Run the project
 
+I have changed the Nav in _Layout.cshtml
+Added photo on index.html
+
 
 

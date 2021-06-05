@@ -9,13 +9,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Doctors_Appointments.Migrations
 {
-    partial class Inital
+    [DbContext(typeof(Doctors_AppointmentsContext))]
+    [Migration("20210605084406_Sql")]
+    partial class Sql
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.8")
+                .HasAnnotation("ProductVersion", "3.1.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

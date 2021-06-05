@@ -4,25 +4,18 @@ using Doctors_Appointments.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Doctors_Appointments.Migrations
 {
-<<<<<<< HEAD:Doctors_Appointments/Migrations/20210605081321_Inital.Designer.cs
-    [DbContext(typeof(DoctorsAppointmentsContext))]
-    [Migration("20210605081321_Inital")]
-    partial class Inital
-=======
     [DbContext(typeof(Doctors_AppointmentsContext))]
-    [Migration("20200922190604_Appointment_Time")]
-    partial class Appointment_Time
+    partial class Doctors_AppointmentsContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.8")
+                .HasAnnotation("ProductVersion", "3.1.15")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 

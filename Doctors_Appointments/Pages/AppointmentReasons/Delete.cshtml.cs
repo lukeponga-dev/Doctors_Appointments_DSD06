@@ -12,9 +12,9 @@ namespace Doctors_Appointments.Pages.AppointmentReasons
 {
     public class DeleteModel : PageModel
     {
-        private readonly Doctors_Appointments.Data.DoctorsAppointmentsContext _context;
+        private readonly Doctors_Appointments.Data.Doctors_AppointmentsContext _context;
 
-        public DeleteModel(Doctors_Appointments.Data.DoctorsAppointmentsContext context)
+        public DeleteModel(Doctors_Appointments.Data.Doctors_AppointmentsContext context)
         {
             _context = context;
         }

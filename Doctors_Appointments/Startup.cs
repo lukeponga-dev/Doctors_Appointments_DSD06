@@ -27,7 +27,7 @@ namespace Doctors_Appointments
         {
             services.AddRazorPages();
 
-            services.AddDbContext<DoctorsAppointmentsContext>(options =>
+            services.AddDbContext<Doctors_AppointmentsContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Doctors_AppointmentsContext")));
         }
 

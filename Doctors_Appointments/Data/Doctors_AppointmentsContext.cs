@@ -4,12 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Doctors_Appointments.Models;
+using  Doctors_Appointments.Data;
 
 namespace Doctors_Appointments.Data
 {
-    public class DoctorsAppointmentsContext : DbContext
+    public class Doctors_AppointmentsContext : DbContext
     {
-        public DoctorsAppointmentsContext (DbContextOptions<DoctorsAppointmentsContext> options)
+        public Doctors_AppointmentsContext (DbContextOptions<Doctors_AppointmentsContext> options)
             : base(options)
         {
         }

@@ -13,9 +13,9 @@ namespace Doctors_Appointments.Pages.AppointmentReasons
 {
     public class EditModel : PageModel
     {
-        private readonly Doctors_Appointments.Data.DoctorsAppointmentsContext _context;
+        private readonly Doctors_Appointments.Data.Doctors_AppointmentsContext _context;
 
-        public EditModel(Doctors_Appointments.Data.DoctorsAppointmentsContext context)
+        public EditModel(Doctors_Appointments.Data.Doctors_AppointmentsContext context)
         {
             _context = context;
         }

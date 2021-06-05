@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Doctors_Appointments.Migrations
 {
-    public partial class Inital : Migration
+    public partial class Sql : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

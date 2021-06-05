@@ -1,10 +1,9 @@
 ﻿using System;
-using System.IO;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Doctors_Appointments.Migrations
 {
-    public partial class InitalCreate : Migration
+    public partial class Inital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -59,6 +58,7 @@ namespace Doctors_Appointments.Migrations
                     PatientId = table.Column<int>(nullable: false),
                     DoctorId = table.Column<int>(nullable: false),
                     ReasonForAppointmentId = table.Column<int>(nullable: false),
+                    AppointmentTime = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -97,9 +97,6 @@ namespace Doctors_Appointments.Migrations
                 name: "IX_Appointment_ReasonForAppointmentId",
                 table: "Appointment",
                 column: "ReasonForAppointmentId");
-
-            var sqlFile = Path.Combine(".\\DbSeed", @"data.sql");
-            migrationBuilder.Sql(File.ReadAllText(sqlFile));
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

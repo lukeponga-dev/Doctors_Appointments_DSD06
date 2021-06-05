@@ -7,9 +7,9 @@ using Doctors_Appointments.Models;
 
 namespace Doctors_Appointments.Data
 {
-    public class Doctors_AppointmentsContext : DbContext
+    public class DoctorsAppointmentsContext : DbContext
     {
-        public Doctors_AppointmentsContext (DbContextOptions<Doctors_AppointmentsContext> options)
+        public DoctorsAppointmentsContext (DbContextOptions<DoctorsAppointmentsContext> options)
             : base(options)
         {
         }

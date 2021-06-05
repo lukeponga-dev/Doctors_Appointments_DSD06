@@ -12,9 +12,9 @@ namespace Doctors_Appointments.Pages.AppointmentReasons
 {
     public class IndexModel : PageModel
     {
-        private readonly Doctors_Appointments.Data.Doctors_AppointmentsContext _context;
+        private readonly Doctors_Appointments.Data.DoctorsAppointmentsContext _context;
 
-        public IndexModel(Doctors_Appointments.Data.Doctors_AppointmentsContext context)
+        public IndexModel(Doctors_Appointments.Data.DoctorsAppointmentsContext context)
         {
             _context = context;
         }

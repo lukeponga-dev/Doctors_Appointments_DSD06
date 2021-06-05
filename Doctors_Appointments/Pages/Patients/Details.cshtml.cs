@@ -12,9 +12,9 @@ namespace Doctors_Appointments.Pages.patients
 {
     public class DetailsModel : PageModel
     {
-        private readonly Doctors_Appointments.Data.Doctors_AppointmentsContext _context;
+        private readonly Doctors_Appointments.Data.DoctorsAppointmentsContext _context;
 
-        public DetailsModel(Doctors_Appointments.Data.Doctors_AppointmentsContext context)
+        public DetailsModel(Doctors_Appointments.Data.DoctorsAppointmentsContext context)
         {
             _context = context;
         }

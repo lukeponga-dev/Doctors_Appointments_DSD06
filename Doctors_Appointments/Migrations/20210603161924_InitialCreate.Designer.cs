@@ -15,9 +15,8 @@ namespace Doctors_Appointments.Migrations
     partial class Inital
 =======
     [DbContext(typeof(Doctors_AppointmentsContext))]
-    [Migration("20210603161924_InitialCreate")]
-    partial class InitialCreate
->>>>>>> 102899661aac25498e21e2e2c0c725ec66118b1c:Doctors_Appointments/Migrations/20210603161924_InitialCreate.Designer.cs
+    [Migration("20200922190604_Appointment_Time")]
+    partial class Appointment_Time
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

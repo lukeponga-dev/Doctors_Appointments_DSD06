@@ -9,15 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Doctors_Appointments.Migrations
 {
-<<<<<<< HEAD:Doctors_Appointments/Migrations/20210605081321_Inital.Designer.cs
-    [DbContext(typeof(DoctorsAppointmentsContext))]
-    [Migration("20210605081321_Inital")]
     partial class Inital
-=======
-    [DbContext(typeof(Doctors_AppointmentsContext))]
-    [Migration("20210603161924_InitialCreate")]
-    partial class InitialCreate
->>>>>>> 102899661aac25498e21e2e2c0c725ec66118b1c:Doctors_Appointments/Migrations/20210603161924_InitialCreate.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

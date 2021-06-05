@@ -28,7 +28,7 @@ namespace Doctors_Appointments
             services.AddRazorPages();
 
             services.AddDbContext<Doctors_AppointmentsContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("Doctors_AppointmentsContext")));
+                    options.UseSqlServer(Configuration.GetConnectionString("Doctors_AppointmentsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "mssql1": {
-      "type": "mssql",
-      "connectionId": "DoctorsAppointmentsdbConnectionString"
-    },
     "mssql2": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:Doctors_AppointmentsContext"
+    },
+    "sqlite1": {
+      "type": "sqlite",
+      "connectionId": "Doctors_AppointmentsContext",
+      "dynamicId": null
     }
   }
 }

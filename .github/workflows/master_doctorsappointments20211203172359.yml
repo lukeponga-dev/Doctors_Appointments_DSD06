@@ -14,15 +14,14 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
+      - uses: actions/checkout@v2 
+		  - name: Setup .NET Core SDK
+		  uses: actions/setup-dotnet@v3.4.2 
+	    with:
           dotnet-version: '6.0.x'
-          include-prerelease: true
-
-      - name: Build with dotnet
+          include-prerelease: true 
+					
+		 - name: Build with dotnet
         run: dotnet build --configuration Release
 
       - name: dotnet publish

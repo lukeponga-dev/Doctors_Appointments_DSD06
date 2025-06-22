@@ -1,3 +1,9 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "compute.appService1": {
+      "group": "connections",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/app-web-nkwqj5t6j3ow2",
+      "type": "compute.appService.linux"
+    }
+  }
 }

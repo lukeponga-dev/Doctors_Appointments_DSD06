@@ -5,13 +5,13 @@
       "type": "compute.appService",
       "connectionId": null
     },
-    "mssql1": {
-      "type": "mssql",
+    "secrets1": {
+      "type": "secrets",
       "connectionId": "ConnectionStrings:Doctors_AppointmentsContext",
       "dynamicId": null
     },
-    "secrets1": {
-      "type": "secrets",
+    "mssql1": {
+      "type": "mssql",
       "connectionId": "ConnectionStrings:Doctors_AppointmentsContext",
       "dynamicId": null
     }

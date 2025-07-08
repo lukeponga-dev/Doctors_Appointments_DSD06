@@ -19,6 +19,13 @@
       "type": "mssql.container",
       "connectionId": "ConnectionStrings:Doctors_AppointmentsContext",
       "dynamicId": null
+    },
+    "sqlite1": {
+      "ignored": "true",
+      "type": "sqlite"
+    },
+    "secrets2": {
+      "type": "secrets.user"
     }
   }
 }

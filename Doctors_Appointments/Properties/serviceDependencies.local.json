@@ -1,31 +1,10 @@
 {
   "dependencies": {
-    "compute.appService1": {
-      "secretStore": null,
-      "group": "connections",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/app-web-nkwqj5t6j3ow2",
-      "type": "compute.appService.linux",
-      "connectionId": null
-    },
-    "secrets1": {
-      "type": "secrets.user",
-      "dynamicId": null
-    },
-    "mssql1": {
-      "containerPorts": "1433:1433",
-      "secretStore": "LocalSecretsFile",
-      "containerName": "mssql",
-      "containerImage": "mcr.microsoft.com/mssql/server:2019-latest",
-      "type": "mssql.container",
-      "connectionId": "ConnectionStrings:Doctors_AppointmentsContext",
-      "dynamicId": null
-    },
     "sqlite1": {
-      "ignored": "true",
-      "type": "sqlite"
-    },
-    "secrets2": {
-      "type": "secrets.user"
+      "secretStore": "LocalSecretsFile",
+      "type": "sqlite.local",
+      "connectionId": "Doctors_AppointmentsContext",
+      "dynamicId": null
     }
   }
 }

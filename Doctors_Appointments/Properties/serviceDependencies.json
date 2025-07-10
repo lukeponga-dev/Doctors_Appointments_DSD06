@@ -1,24 +1,13 @@
 {
   "dependencies": {
-    "compute.appService1": {
-      "group": "connections",
-      "type": "compute.appService",
-      "connectionId": null
-    },
-    "secrets2": {
-      "type": "secrets"
-    },
-    "mssql1": {
+    "mssql2": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:Doctors_AppointmentsContext"
     },
-    "mssql2": {
-      "type": "mssql",
-      "connectionId": "ConnectionStrings:DatabaseConnection"
-    },
-    "secrets1": {
-      "type": "secrets",
-      "connectionId": "DoctorsAppointmentsdbConnectionString"
+    "sqlite1": {
+      "type": "sqlite",
+      "connectionId": "Doctors_AppointmentsContext",
+      "dynamicId": null
     }
   }
 }
